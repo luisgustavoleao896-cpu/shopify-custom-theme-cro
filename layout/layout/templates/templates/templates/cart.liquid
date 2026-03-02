@@ -1,1 +1,9 @@
+<h1>Carrinho</h1>
 
+{% for item in cart.items %}
+  {% render 'product-card', product: item.product %}
+{% endfor %}
+
+<h2>Upsell</h2>
+{% assign upsell = all_products['produto-exemplo'] %}
+{% render 'product-card', product: upsell %}
