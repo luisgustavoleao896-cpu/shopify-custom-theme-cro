@@ -1,1 +1,21 @@
+<section class="hero">
+  <h1>{{ section.settings.title }}</h1>
+</section>
 
+{% schema %}
+{
+  "name": "Hero CRO",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Título"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero CRO"
+    }
+  ]
+}
+{% endschema %}
